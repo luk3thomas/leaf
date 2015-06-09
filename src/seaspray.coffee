@@ -1,7 +1,7 @@
 Wheeljack      = require 'wheeljack'
 {EventEmitter} = require 'events'
 
-class Leaf extends EventEmitter
+class Seaspray extends EventEmitter
 
   constructor: (object, parent) ->
     @values = new Wheeljack(object)
@@ -9,7 +9,7 @@ class Leaf extends EventEmitter
     @
 
   select: (key) ->
-    new Leaf(@values.get(key), @)
+    new Seaspray(@values.get(key), @)
 
   unwrap: (key) ->
     if (key)
@@ -38,4 +38,4 @@ class Leaf extends EventEmitter
   isObject: (object) ->
     typeof object is 'object' && object.pop isnt [].pop
 
-module.exports = Leaf
+module.exports = Seaspray

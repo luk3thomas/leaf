@@ -1,11 +1,11 @@
 {
-  "name": "leaf-object",
+  "name": "seaspray",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luk3thomas/leaf.git"
+    "url": "https://github.com/luk3thomas/seaspray.git"
   },
   "scripts": {
     "test": "NODE_PATH=./src ./node_modules/jasmine-node/bin/jasmine-node --coffee test/",

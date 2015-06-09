@@ -1,9 +1,9 @@
 module.exports =
 {
-  entry: './src/leaf.coffee',
+  entry: './src/seaspray.coffee',
   output: {
     filename: 'index.js',
-    library: 'Leaf',
+    library: 'Seaspray',
     libraryTarget: 'umd'
   },
   module: {
