@@ -1,0 +1,30 @@
+{
+  "name": "leaf",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luk3thomas/leaf.git"
+  },
+  "scripts": {
+    "test": "NODE_PATH=./src ./node_modules/jasmine-node/bin/jasmine-node --coffee test/",
+    "testw": "NODE_PATH=./src ./node_modules/jasmine-node/bin/jasmine-node --color --autotest --coffee test/ --watch src",
+    "prepublish": "npm run compile",
+    "compile": "./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/webpack -w"
+  },
+  "author": "Luke Thomas",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "jasmine-node": "^1.14.5",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.3",
+    "wheeljack": "^1.0.0"
+  }
+}
